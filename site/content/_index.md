@@ -1,5 +1,5 @@
 ---
-title: Ponddy Coffee
+title: Some random Coffee
 subtitle: Support sustainable coding while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:
