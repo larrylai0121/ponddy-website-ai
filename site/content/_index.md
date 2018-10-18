@@ -1,6 +1,6 @@
 ---
-title: Some random Coffee
-subtitle: Support sustainable coding while enjoying a cup
+title: This is new Ponddy AI  Website
+subtitle: 'Looks cool and easy, hah?'
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why this template?
