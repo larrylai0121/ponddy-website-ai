@@ -1,9 +1,9 @@
 ---
 title: This is new Ponddy AI  Website
-subtitle: 'Looks cool and easy, hah?'
+subtitle: I can just edit like this.
 image: /img/home-jumbotron.jpg
 blurb:
-  heading: Why this template?
+  heading: Which template to choose
   text: >-
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
