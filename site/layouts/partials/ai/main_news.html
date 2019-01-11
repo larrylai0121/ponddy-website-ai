@@ -1,0 +1,25 @@
+<section id="news" class="text-center">
+    <h2>{{.title}}</h2>
+    <div class="col-12">
+        <div class="custom-ctrl-btn next-btn">
+            <img src="{{.arrow_left | absURL}}"></img>
+        </div>
+        <div class="custom-ctrl-btn prev-btn">
+            <img src="{{.arrow_right | absURL }}"></img>
+        </div>
+        <div class="owl-carousel owl-theme">
+            {{ .Scratch.Set "button_text" .button_text }}
+            {{ range .carousel }}
+            <div class="item">
+                <div class="card-news">
+                    <img class="card-img-top" src="{{.image | absURL}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{.text | safeHTML}}</p>
+                        <a class="btn btn-ponddy" href="{{.url}}" target="_blank">{{ $.button_text }}</a>
+                    </div>
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</section>

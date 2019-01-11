@@ -18,6 +18,55 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
+      - file: "site/ai/_index.md"
+        label: "Ponddy AI"
+        name: ai
+        fields:
+          - label: Site
+            name: site
+            widget: object
+            fields:
+              - label: Title
+                name: title 
+                widget: string
+              - label: Author
+                name: author
+                widget: string
+              - label: Keywords
+                name: keywords
+                widget: string
+              - label: Classification
+                name: classification
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Copyright
+                name: copytight
+                widget: string
+              - label: Logo
+                name: logo
+                widget: object
+                fields:
+                - label: Image
+                  name: image
+                  widget: image
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Alt
+                  name: alt
+                  widget: string
+        - label: Header
+          name: header
+          widget: object
+          fields:
+            - label: Link-to Section
+              name: link_section
+              widget: string
+            - label: Title
+              name: title
+              widget: string
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"

@@ -1,0 +1,19 @@
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <p class="main-text align-middle align-self-center">{{.headline | safeHTML}}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-centerr">
+            <div class="main-imgs col-md-10 justify-content-center align-items-centerr">
+                <img class="main-img1" src="{{.image1 | absURL}}">
+                <img class="main-img2" src="{{.image2 | absURL}}">
+                <img class="main-img3" src="{{.image3 | absURL}}">
+            </div>
+        </div>
+    </div>
+</section>
