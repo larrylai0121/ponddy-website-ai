@@ -57,184 +57,66 @@ collections: # A list of collections the CMS should be able to edit
               - label: Link-to Section
                 name: link_section
                 widget: string
-          - label: Footer
-            name: footer
+              
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Blurb", name: blurb, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Intro", name: intro, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Products", name: products, widget: list, fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Values", name: "values", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+      - file: "site/content/contact/_index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Logo, name: logo, widget: image}
+          - {label: Body, name: body, widget: markdown}
+          - label: Contact Entries
+            name: contact_entries
+            widget: list
             fields:
-              - label: Products (Logo)
-                name: products_icon
-                widget: list
-                fields:
-                  - label: Logo of the Product
-                    name: image
-                    widget: image
-                  - label: Link to the Product Page
-                    name: url
-                    widget: string
-              - label: Box - Our Products
-                name: our_products
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Product entries
-                    name: links
-                    fields:
-                      - label: Name of the Product
-                        name: title
-                        widget: string
-                      - label: Link to the Product Page
-                        name: url
-                        widget: string
-              - label: Box - Work
-                name: work
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Link entries
-                    name: links
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Box - Resources
-                name: resources
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Resource entries
-                    name: links
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Box - Terms and Policies
-                name: tnp
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Link entries
-                    name: links
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Copyright
-                name: copyright
+              - label: Heading
+                name: heading
                 widget: string
-            - label: Main - Site content
-              name: main
-              widget: object
-              fields:
-                - label: Website Hero
-                  name: hero
-                  widget: object
-                  fields:
-                    - {label: Headline, name: headline, widget: string}
-                    - {label: Image 1, name: image1, widget: image}
-                    - {label: Image 2, name: image2, widget: image}
-                    - {label: Image 3, name: image3, widget: image}
-                - label: Who We Are
-                  name: about
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                    - label: Boxes
-                      name: boxes
-                      widget: list
-                      fields:
-                        - label: Title
-                          name: title
-                          widget: string
-                        - label: Image
-                          name: image
-                          widget: image
-                        - label: Content
-                          name: text
-                          widget: string
-                - label: AI
-                  name: ai
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                    - {label: Image, name: image, widget: image}
-                - label: Knowledge
-                  name: knowledge
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                - label: Whate we Do
-                  name: services
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                - label: Tutors
-                  name: tutors
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: Reader
-                  name: reader
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: Textbooks
-                  name: textbooks
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: News
-                  name: News
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Arrow - Right, name: arrow_right, widget: image}
-                    - {label: Arrow - Left, name: arrow_left, widget: image}
-                    - {label: Button Text, name: button_text, widget: string}
-                    - label: Carousel
-                      name: carousel
-                      widget: list
-                      fields:
-                        - {label: Image, name: image, widget: image}
-                        - {label: Content, name: content, widget: string}
-                        - {label: Link URL, name: url, widget: string}
-                - label: Social Networks
-                  name: social
-                  widget: object
-                  fields:
-                    - {label: Facebook, name: facebook, widget: string}
-                    - {label: Twitter, name: twitter, widget: string}
-                    - {label: Youtube, name: youtube, widget: string}
-                    - {label: Instagram, name: instagram, widget: string}
-                    - {label: LinkedIn, name: linkedin, widget: string}
+              - label: Text
+                name: text
+                widget: text
+      - file: "site/content/products/_index.md"
+        label: "Products Page"
+        name: "products"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+          - {label: Full_image, name: full_image, widget: image}
+          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+      - file: "site/content/values/_index.md"
+        label: "Values Page"
+        name: "values"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Image, name: imageUrl, widget: image}
