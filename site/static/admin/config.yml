@@ -137,104 +137,104 @@ collections: # A list of collections the CMS should be able to edit
               - label: Copyright
                 name: copyright
                 widget: string
-            - label: Main - Site content
-              name: main
-              widget: object
-              fields:
-                - label: Website Hero
-                  name: hero
-                  widget: object
-                  fields:
-                    - {label: Headline, name: headline, widget: string}
-                    - {label: Image 1, name: image1, widget: image}
-                    - {label: Image 2, name: image2, widget: image}
-                    - {label: Image 3, name: image3, widget: image}
-                - label: Who We Are
-                  name: about
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                    - label: Boxes
-                      name: boxes
-                      widget: list
-                      fields:
-                        - label: Title
-                          name: title
-                          widget: string
-                        - label: Image
-                          name: image
-                          widget: image
-                        - label: Content
-                          name: text
-                          widget: string
-                - label: AI
-                  name: ai
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                    - {label: Image, name: image, widget: image}
-                - label: Knowledge
-                  name: knowledge
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                - label: Whate we Do
-                  name: services
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Content, name: text, widget: string}
-                - label: Tutors
-                  name: tutors
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: Reader
-                  name: reader
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: Textbooks
-                  name: textbooks
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Image, name: image, widget: image}
-                    - {label: Description, name: description, widget: string}
-                    - {label: Link URL, name: url, widget: string}
-                    - {label: Button Text, name: button_text, widget: string}
-                - label: News
-                  name: News
-                  widget: object
-                  fields:
-                    - {label: Title, name: title, widget: string}
-                    - {label: Arrow - Right, name: arrow_right, widget: image}
-                    - {label: Arrow - Left, name: arrow_left, widget: image}
-                    - {label: Button Text, name: button_text, widget: string}
-                    - label: Carousel
-                      name: carousel
-                      widget: list
-                      fields:
-                        - {label: Image, name: image, widget: image}
-                        - {label: Content, name: content, widget: string}
-                        - {label: Link URL, name: url, widget: string}
-                - label: Social Networks
-                  name: social
-                  widget: object
-                  fields:
-                    - {label: Facebook, name: facebook, widget: string}
-                    - {label: Twitter, name: twitter, widget: string}
-                    - {label: Youtube, name: youtube, widget: string}
-                    - {label: Instagram, name: instagram, widget: string}
-                    - {label: LinkedIn, name: linkedin, widget: string}
+          - label: Main - Site content
+            name: main
+            widget: object
+            fields:
+              - label: Website Hero
+                name: hero
+                widget: object
+                fields:
+                  - {label: Headline, name: headline, widget: string}
+                  - {label: Image 1, name: image1, widget: image}
+                  - {label: Image 2, name: image2, widget: image}
+                  - {label: Image 3, name: image3, widget: image}
+              - label: Who We Are
+                name: about
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: string}
+                  - label: Boxes
+                    name: boxes
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Image
+                        name: image
+                        widget: image
+                      - label: Content
+                        name: text
+                        widget: string
+              - label: AI
+                name: ai
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: string}
+                  - {label: Image, name: image, widget: image}
+              - label: Knowledge
+                name: knowledge
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: string}
+              - label: Whate we Do
+                name: services
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: string}
+              - label: Tutors
+                name: tutors
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: Reader
+                name: reader
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: Textbooks
+                name: textbooks
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: News
+                name: News
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Arrow - Right, name: arrow_right, widget: image}
+                  - {label: Arrow - Left, name: arrow_left, widget: image}
+                  - {label: Button Text, name: button_text, widget: string}
+                  - label: Carousel
+                    name: carousel
+                    widget: list
+                    fields:
+                      - {label: Image, name: image, widget: image}
+                      - {label: Content, name: content, widget: string}
+                      - {label: Link URL, name: url, widget: string}
+              - label: Social Networks
+                name: social
+                widget: object
+                fields:
+                  - {label: Facebook, name: facebook, widget: string}
+                  - {label: Twitter, name: twitter, widget: string}
+                  - {label: Youtube, name: youtube, widget: string}
+                  - {label: Instagram, name: instagram, widget: string}
+                  - {label: LinkedIn, name: linkedin, widget: string}
