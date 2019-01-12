@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: Title
                 name: title
-                widget: string
+                widget: markdown
               - label: Link-to Section
                 name: link_section
                 widget: string
@@ -228,7 +228,7 @@ collections: # A list of collections the CMS should be able to edit
                     widget: list
                     fields:
                       - {label: Image, name: image, widget: image}
-                      - {label: Content, name: content, widget: text}
+                      - {label: Content, name: text, widget: markdown}
                       - {label: Link URL, name: url, widget: string}
               - label: Social Networks
                 name: social
