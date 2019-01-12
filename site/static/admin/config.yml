@@ -59,6 +59,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: string
           - label: Footer
             name: footer
+            widget: object
             fields:
               - label: Products (Logo)
                 name: products_icon
@@ -215,7 +216,7 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Link URL, name: url, widget: string}
                   - {label: Button Text, name: button_text, widget: string}
               - label: News
-                name: News
+                name: news
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
