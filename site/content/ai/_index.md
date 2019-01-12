@@ -12,7 +12,7 @@ site:
   title: Ponddy AI
 header:
   - link_section: main
-    title: Home Menu
+    title: Home
   - link_section: '#who-we-are'
     title: About
   - link_section: '#what-we-do'
