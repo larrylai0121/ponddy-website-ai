@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
-public_folder: "img"
+public_folder: "public"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
@@ -12,7 +12,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Ponddy AI"
         name: ai
         fields:
-          - label: Site
+          - label: Site Settings
             name: site
             widget: object
             fields:
@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: description
                 widget: string
               - label: Copyright
-                name: copytight
+                name: copyright
                 widget: string
               - label: Logo
                 name: logo
@@ -47,16 +47,17 @@ collections: # A list of collections the CMS should be able to edit
                 - label: Alt
                   name: alt
                   widget: string
-          - label: Header
+          - label: Header – Menu Links
             name: header
             widget: list
             fields:
+              - label: Title
+                  name: title
+                  widget: string
               - label: Link-to Section
                 name: link_section
                 widget: string
-              - label: Title
-                name: title
-                widget: string
+              
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
