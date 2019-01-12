@@ -57,91 +57,6 @@ collections: # A list of collections the CMS should be able to edit
               - label: Link-to Section
                 name: link_section
                 widget: string
-          - label: Footer
-            name: footer
-            widget: object
-            fields:
-              - label: Products (Logo)
-                name: products_icon
-                widget: list
-                fields:
-                  - label: Logo of the Product
-                    name: image
-                    widget: image
-                  - label: Link to the Product Page
-                    name: url
-                    widget: string
-              - label: Box - Our Products
-                name: our_products
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Product entries
-                    name: links
-                    widget: list
-                    fields:
-                      - label: Name of the Product
-                        name: title
-                        widget: string
-                      - label: Link to the Product Page
-                        name: url
-                        widget: string
-              - label: Box - Work
-                name: work
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Link entries
-                    name: links
-                    widget: list
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Box - Resources
-                name: resources
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Resource entries
-                    name: links
-                    widget: list
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Box - Terms and Policies
-                name: tnp
-                widget: object
-                fields:
-                  - label: Name of the Box
-                    name: title
-                    widget: string
-                  - label: Link entries
-                    name: links
-                    widget: list
-                    fields:
-                      - label: Link title
-                        name: title
-                        widget: string
-                      - label: Link URL
-                        name: url
-                        widget: string
-              - label: Copyright
-                name: copyright
-                widget: string
           - label: Main - Site content
             name: main
             widget: object
@@ -243,3 +158,88 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Youtube, name: youtube, widget: string}
                   - {label: Instagram, name: instagram, widget: string}
                   - {label: LinkedIn, name: linkedin, widget: string}
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Products (Logo)
+                name: products_icon
+                widget: list
+                fields:
+                  - label: Logo of the Product
+                    name: image
+                    widget: image
+                  - label: Link to the Product Page
+                    name: url
+                    widget: string
+              - label: Box - Our Products
+                name: our_products
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Product entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Name of the Product
+                        name: title
+                        widget: string
+                      - label: Link to the Product Page
+                        name: url
+                        widget: string
+              - label: Box - Work
+                name: work
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Resources
+                name: resources
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Resource entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Terms and Policies
+                name: tnp
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Copyright
+                name: copyright
+                widget: string
