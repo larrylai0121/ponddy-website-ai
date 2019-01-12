@@ -154,7 +154,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Content, name: text, widget: string}
+                  - {label: Content, name: text, widget: text}
                   - label: Boxes
                     name: boxes
                     widget: list
@@ -167,33 +167,33 @@ collections: # A list of collections the CMS should be able to edit
                         widget: image
                       - label: Content
                         name: text
-                        widget: string
+                        widget: text
               - label: AI
                 name: ai
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Content, name: text, widget: string}
+                  - {label: Content, name: text, widget: text}
                   - {label: Image, name: image, widget: image}
               - label: Knowledge
                 name: knowledge
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Content, name: text, widget: string}
-              - label: Whate we Do
+                  - {label: Content, name: text, widget: text}
+              - label: Whate We Do
                 name: services
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Content, name: text, widget: string}
+                  - {label: Content, name: text, widget: text}
               - label: Tutors
                 name: tutors
                 widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Image, name: image, widget: image}
-                  - {label: Description, name: description, widget: string}
+                  - {label: Description, name: description, widget: text}
                   - {label: Link URL, name: url, widget: string}
                   - {label: Button Text, name: button_text, widget: string}
               - label: Reader
@@ -202,7 +202,7 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Image, name: image, widget: image}
-                  - {label: Description, name: description, widget: string}
+                  - {label: Description, name: description, widget: text}
                   - {label: Link URL, name: url, widget: string}
                   - {label: Button Text, name: button_text, widget: string}
               - label: Textbooks
@@ -211,7 +211,7 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Image, name: image, widget: image}
-                  - {label: Description, name: description, widget: string}
+                  - {label: Description, name: description, widget: text}
                   - {label: Link URL, name: url, widget: string}
                   - {label: Button Text, name: button_text, widget: string}
               - label: News
@@ -227,7 +227,7 @@ collections: # A list of collections the CMS should be able to edit
                     widget: list
                     fields:
                       - {label: Image, name: image, widget: image}
-                      - {label: Content, name: content, widget: string}
+                      - {label: Content, name: content, widget: text}
                       - {label: Link URL, name: url, widget: string}
               - label: Social Networks
                 name: social
