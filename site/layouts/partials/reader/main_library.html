@@ -7,7 +7,7 @@
 
                 <div class="col-10 cards">
                     {{ range .example_content }}
-                    <a href="{{.url | safeHTML }}" target="_blank" onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});">
+                    <a href="{{.link_url | safeHTML }}" target="_blank" onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});">
                         <img src="{{.image | absURL }}" class="{{.class}} card-animate">
                     </a>
                     {{ end }}
