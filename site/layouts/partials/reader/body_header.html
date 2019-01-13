@@ -1,0 +1,35 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top">
+        <div class="container">
+            <img class="logo" src="{{ .site.logo.image }}" alt="{{.site.logo.alt}}" title="{{.site.logo.title}}" >
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto text-center">
+                    <li>
+                        <a href="#how-it-works" onClick="goHero()">
+                           {{.header.navbar.how_it_works}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/reader_pricing">
+                             {{.header.navbar.pricing}}
+                        </a>
+                    </li>
+                </ul>
+                <div class="action text-center">
+                    <a class="button naked" href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/">{{.header.actionbar.signin}}</a>
+                    <a class="button outline" href="pricing.html" onclick="gtag('event', 'view_item', {'event_category' : 'pricing','event_label' : 'landing nav sign up'})">
+                        {{.header.actionbar.signup}}</a>
+                    <a class="button naked" href="http://ponddy.ai">
+                        {{.header.actionbar.ponddy}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

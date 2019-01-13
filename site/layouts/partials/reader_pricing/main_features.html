@@ -1,0 +1,30 @@
+<section class="features">
+    <h1>{{.title}}</h1>
+
+    {{ range .tables }}
+    <div class="p-table first">
+
+        <div class="c-row head">
+            {{ range .head }}
+            <div class="cell">
+                {{ .content }}
+            </div>
+            {{ end }}
+        </div>
+
+        {{ range .rows}}
+        <div class="c-row">
+            {{ range .cells}}
+            <div class="cell">
+                {{ if .image }}
+                <img src="{{.image | absURL }}">
+                {{ else }}
+                {{ .content }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>

@@ -1,0 +1,39 @@
+<section class="hero">
+    <div class="container-fluid">
+        <div class="boxes justify-content-center align-self-center">
+            {{ range .pricing_boxes}}
+            <div class="pricing-box">
+                <h1>{{.title}}</h1>
+                {{ if .subtitle }}
+                <span>{{ .subtitle }}</span>
+                {{ end }}
+                <p>{{.description | safeHTML}}</p>
+                <div class="price">
+                    {{ if .price.currency }}
+                    <div class="currency">
+                        {{ .price.currency }}
+                    </div>
+                    {{ end }}
+                    <div class="main">
+                        {{.price.main}}
+                    </div>
+                    {{ if .price.extra }}
+                    <div class="extra">
+                        {{ .price.extra | safeHTML }}
+                    </div>
+                    {{ end }}
+                </div>
+                <a class="button" href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/"
+                    onClick="gtag('event', 'view_item', {'event_category' : 'sign_up-monthly','event_label' : 'pricing'});">
+                    START A FREE TRIAL</a>
+                {{ if .badge }}
+                <div class="badge">
+                    <span>{{ .badge.line1 }}</span>
+                    {{ .badge.line2 }}
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

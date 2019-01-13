@@ -1,0 +1,35 @@
+<footer>
+    <div class="container">
+        <div class="row justify-content-center align-self-center no-gutters">
+            <div class="col-md-12 text-center pt-3 pb-3">
+                {{ range .products_icon }}
+                <a href="{{ .url }}">
+                    <img src="{{ .image | absURL }}" class="product-logo">
+                </a>
+                {{ end }}
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="navigation justify-content-center align-self-center">
+                <ul>
+                    {{ range .navigation }}
+                    <li>
+                        <a href="{{.url}}">{{.title}}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <div class="col-md-12">
+                <div class="copyright">
+                    {{.copyright | safeHTML}}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-up-arrow">
+    <img alt="scroll-up" src="{{.topup_arrow | absURL}}">
+</div>

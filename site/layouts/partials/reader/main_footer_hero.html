@@ -1,0 +1,20 @@
+<section class="footer-hero">
+    <div class="background">
+        <img src="{{.background | absURL}}" class="cta">
+    </div>
+
+    <div class="hero-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>{{.title}}</h1>
+                    <p>{{ .description }}</p>
+
+                    <a href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/"
+                        class="button" onClick="gtag('event', 'view_item', {'event_category' : 'login','event_label' : 'landing'});">
+                        {{.signup_button}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

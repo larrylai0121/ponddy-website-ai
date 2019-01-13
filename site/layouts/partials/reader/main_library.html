@@ -1,0 +1,18 @@
+<section class="library">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center justify-content-center align-self-center">
+                <h1>{{.title}}</h1>
+                <p>{{.description}}</p>
+
+                <div class="col-10 cards">
+                    {{ range .example_content }}
+                    <a href="{{.url | safeHTML }}" target="_blank" onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});">
+                        <img src="{{.image | absURL }}" class="{{.class}} card-animate">
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

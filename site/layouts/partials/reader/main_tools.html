@@ -1,0 +1,37 @@
+<section class="tools">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <h1>{{ .title }}</h1>
+                <p>{{ .description }}</p>
+
+                <div class="wheel">
+                    {{ range .wheel }}
+                    <img src="{{.url | absURL}}" class="dictionary tool-animate">
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <div class="feature-boxes row">
+                    {{ range .features }}
+                    <div class="col-md-3 col-8">
+                        <div class="feature">
+                            <h1>{{.title}}</h1>
+                            <p>{{.description}}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

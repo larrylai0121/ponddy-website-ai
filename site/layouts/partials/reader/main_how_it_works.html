@@ -1,0 +1,32 @@
+<section class="content how-it-works">
+    <div class="container">
+        <div class="row product">
+            <div class="col-md-6 product-pictures no-gutters">
+                <img src="{{.show.mac_image | absURL }}" class="mac" id="mac">
+                <img src="{{.show.iphone_image | absURL }}" class="iPhone-Xs">
+            </div>
+            <div class="col-md-6 description">
+                <h6>
+                    {{.title}}
+                </h6>
+
+                <div class="icons">
+                    {{ range .icons }}
+                    <img src="{{.url | absURL}}">
+                    {{ end }}
+                </div>
+
+                <p>
+                    {{ .description }}
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-self-center no-gutters">
+            <div class="col-md-12 features">
+                {{ range .feature_icons }}
+                <img src="{{.url | absURL}}">
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
