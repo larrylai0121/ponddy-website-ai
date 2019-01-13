@@ -27,7 +27,7 @@ main:
         description: 'Ponddy Reader makes authentic material comprehensible while minimizing class preparation time.'
         create_button: Create a FREE account
         pricing_button: Go Standard
-        youtube_embed_link: 'http://videos.sproutvideo.com/embed/a09ddeb71d1ce7c628/b64eeb88fd1be758?playerTheme=dark&playerColor='
+        youtube_embed_link: 'https://videos.sproutvideo.com/embed/a09ddeb71d1ce7c628/b64eeb88fd1be758?playerTheme=dark&playerColor='
     how_it_works:
         show:
             mac_image: public/images/reader/mac.png

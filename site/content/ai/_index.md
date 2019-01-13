@@ -29,7 +29,7 @@ footer:
         - image: public/images/ai/textbook-logo.svg
           url: https://chinese.ponddy.com
         - image: public/images/ai/tutors-logo.svg
-          url: http://tutors.ponddy.com
+          url: https://tutors.ponddy.com
         - image: public/images/ai/reader-logo.svg
           url: https://reader.ponddy.com
     our_products:
@@ -38,7 +38,7 @@ footer:
             - title: Smart Textbooks
               url: https://chinese.ponddy.com
             - title: Tutors
-              url: http://tutors.ponddy.com
+              url: https://tutors.ponddy.com
             - title: Reader
               url: https://reader.ponddy.com
     work:
@@ -95,7 +95,7 @@ main:
         image: public/images/ai/mac-tutors.png
         title: Tutors
         description: 'Ponddy offers on-demand and scheduled courses, including College Board approved AP® Chinese course.'
-        url: http://tutors.ponddy.com
+        url: https://tutors.ponddy.com
         button_text: Learn More
     reader:
         image: public/images/ai/mac-reader.png
@@ -126,7 +126,7 @@ main:
               url: https://www.abc-7.com/story/39666279/ponddy-education-inc-announces-the-launch-of-mini-group-chinese-courses-as-part-of-its-ponddy-tutors-program
             - image: public/images/ai/news/ponddy-reader.png
               text: '「Ponddy Reader」<br /> 結合人工智慧及大數據的智慧華語學習助手'
-              url: http://life.taiwan368.com.tw/e_news.php?id=18354
+              url: https://life.taiwan368.com.tw/e_news.php?id=18354
             - image: public/images/ai/news/ponddy-education-inc-secures-6-million.png
               text: 'Ponddy Education Inc. Secures $6 Million in Series A Funding Investors Impressed with Ponddy’s AI Technology'
               url: https://www.prweb.com/releases/2018/03/prweb15289746.htm
