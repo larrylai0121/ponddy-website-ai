@@ -4,6 +4,9 @@ backend:
 media_folder: "site/static/public/images" # Folder where user uploaded files should go
 public_folder: "/public/images"
 
+editor:
+  preview: false
+
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
