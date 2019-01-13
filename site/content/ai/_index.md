@@ -13,7 +13,7 @@ site:
     copyright: Ponddy Education Inc
 
 header:
-    - link_section: main
+    - link_section: '#'
       title: Home
     - link_section: '#who-we-are'
       title: About
