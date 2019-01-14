@@ -1,6 +1,6 @@
 ---
 site:
-    title: Ponddy AI
+    title: Ponddy AI 
     logo: 
         image: /public/images/ai/ponddy-logo.png
         title: Ponddy
