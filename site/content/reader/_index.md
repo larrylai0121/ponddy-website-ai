@@ -41,6 +41,8 @@ main:
       class preparation time.
     pricing_button: Go Standard
     title: Transform ANY Content Into Learning Materials
+    youtube_embed_lunk: >-
+      //videos.sproutvideo.com/embed/a09ddeb71d1ce7c628/b64eeb88fd1be758?playerTheme=dark&playerColor=
   how_it_works:
     feature_icons:
       - url: public/images/reader/leveled-withshadow.gif
