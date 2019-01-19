@@ -9,7 +9,7 @@ site:
   keywords: 'learning, education, ai, chinese, tutors, reader, ponddy'
   logo:
     alt: Go Home
-    image: /public/images/reader/ponddy-logo.svg
+    image: /public/images/reader-logo.png
     title: Reader
   title: Ponddy Reader
 header:
